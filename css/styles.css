@@ -20,7 +20,7 @@ body {
   font-size: 14px;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -83,10 +83,8 @@ img {
   color: var(--accent-color);
 }
 
-.list,
-.team-list,
-.features-list,
-.footer-list {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -214,21 +212,18 @@ ul {
 
 /* Contacts-list */
 
-.contacts-list {
+.contacts {
   display: flex;
   margin-left: auto;
-}
-
-.contacts-list {
   color: var(--primary-text-color);
 }
 
-.contacts-list .item + .item {
+.contacts .item + .item {
   margin-left: 50px;
 }
 
-.contacts-list .header-contacts:hover,
-.contacts-list .header-contacts:focus {
+.contacts .header-contacts:hover,
+.contacts .header-contacts:focus {
   color: var(--accent-color);
 }
 
@@ -258,7 +253,7 @@ ul {
 
 /* Features */
 
-.features-list .title,
+.features .title,
 .title {
   color: var(--title-text-color);
 }
@@ -283,7 +278,7 @@ ul {
   height: 70px;
 }
 
-.features-list {
+.features {
   display: flex;
 }
 
@@ -405,12 +400,12 @@ ul {
 
 /* Section */
 
-.section-first {
+.skills {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-second {
+.wedo {
   padding-bottom: 94px;
 }
 
@@ -425,7 +420,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.team-section {
+.team {
   background-color: var(--third-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
