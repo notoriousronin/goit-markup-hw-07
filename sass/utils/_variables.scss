@@ -1,0 +1,51 @@
+$main-text-color: rgba(117, 117, 117, 1);
+$accent-text-color: #2196f3;
+$title-text-color: #212121;
+
+$white-text-color: #ffffff;
+$primary-bg-color: #e5e5e5;
+$second-bg-color: #2f303a;
+$third-bg-color: #f5f4fa;
+
+$portfolio-bottom-line: 1px solid #ececec;
+
+$transition-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$main-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$modal-window-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$button-hover-color: #188ce8;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+[class*='__container'] {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+[class*='__logo'] {
+  display: block;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
