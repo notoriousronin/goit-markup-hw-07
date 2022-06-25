@@ -1,0 +1,55 @@
+.wedo {
+  padding-bottom: 94px;
+}
+
+.wedo__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.wedo__list {
+  display: flex;
+}
+
+.wedo__item {
+  width: calc((100%-60) / 3);
+}
+
+.wedo__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.wedo__thumb {
+  position: relative;
+}
+
+.wedo__box {
+  position: absolute;
+  margin: 0 auto;
+
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: $white-text-color;
+}
+
+.wedo__label {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
