@@ -6,7 +6,7 @@ html {
   color: $main-text-color;
   background-color: $white-text-color;
 
-  font-family: font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 
@@ -47,9 +47,13 @@ h1 {
 
 h2 {
   font-weight: 700;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 textarea {
   resize: none;
+}
+
+.container > .logo {
+  display: inline-block;
 }
