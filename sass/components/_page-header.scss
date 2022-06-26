@@ -11,10 +11,6 @@
   color: $title-text-color;
 }
 
-.header--lined {
-  border-bottom: $portfolio-bottom-line;
-}
-
 .header__site-nav {
   display: flex;
   margin-left: 93px;
@@ -45,6 +41,7 @@
 }
 
 .site-nav__link--current {
+  color: $accent-text-color;
   position: relative;
 }
 
