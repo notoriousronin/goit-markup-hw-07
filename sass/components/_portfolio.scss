@@ -32,16 +32,15 @@
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color $transition-animation, background-color $transition-animation;
 
-.portfolio__btns-btn:hover,
-.portfolio__btns-btn:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: $accent-text-color;
-  color: $white-text-color;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: $accent-text-color;
+    color: $white-text-color;
+  }
 }
 
 .portfolio__positions {
@@ -53,11 +52,11 @@
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-}
 
-.portfolio__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio__item:nth-child(3n) {
@@ -84,7 +83,7 @@
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-animation;
 }
 
 .portfolio__item:hover .portfolio__overlay {
@@ -108,7 +107,6 @@
 .portfolio__meta-title {
   margin-bottom: 4px;
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

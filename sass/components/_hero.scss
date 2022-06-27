@@ -38,10 +38,9 @@
   border: 0;
   border-radius: 4px;
   padding: 10px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color $transition-animation, background-color $transition-animation;
 
-.hero__button:hover {
-  background: $button-hover-color;
+  &:hover {
+    background: $button-hover-color;
+  }
 }
